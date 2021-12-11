@@ -1,0 +1,30 @@
+
+
+</blockList>
+
+<targetList>
+    <target format="grid">
+	    <cell position="37,32,0"/>
+	    <cell position="38,32,0"/>
+	    <cell position="39,32,0"/>
+	    <cell position="37,31,0"/>
+	    <cell position="38,31,0"/>
+	    <cell position="39,31,0"/>
+	    <cell position="37,30,0"/>
+	    <cell position="38,30,0"/>
+	    <cell position="39,30,0"/>
+	    <cell position="37,29,0"/>
+	    <cell position="38,29,0"/>
+	    <cell position="39,29,0"/>
+	    <cell position="37,28,0"/>
+	    <cell position="38,28,0"/>
+	    <cell position="39,28,0"/>
+	    <cell position="37,27,0"/>
+	    <cell position="38,27,0"/>
+	    <cell position="39,27,0"/>
+	    <cell position="37,26,0"/>
+	    <cell position="38,26,0"/>
+	    <cell position="39,26,0"/>
+    </target>
+</targetList>
+</world>

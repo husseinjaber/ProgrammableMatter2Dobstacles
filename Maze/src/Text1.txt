@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no" ?>
+<visuals windowSize="1800,900"/>
+<world gridSize="42,42,1" >
+<camera target="1550,860,1" directionSpherical="0,90,3650" angle="30" near="1000" far="10000" />
+<spotlight target="1800,900,21" directionSpherical="60,50,6100" angle="33" />
+
+
+<blockList color="128,128,128">
+<block position="4,2,0"/>
+<block position="5,2,0"/>
+<block position="6,2,0" leader="true" color="255,255,0"/>
+<block position="4,3,0"/>
+<block position="5,3,0"/>
+<block position="6,3,0"/>
+<block position="4,4,0"/>
+<block position="5,4,0"/>
+<block position="6,4,0"/>
+<block position="4,5,0"/>
+<block position="5,5,0"/>
+<block position="6,5,0"/>
+<block position="4,6,0"/>
+<block position="5,6,0"/>
+<block position="6,6,0"/>
+<block position="4,7,0"/>
+<block position="5,7,0"/>
+<block position="6,7,0"/>
+<block position="4,8,0"/>
+<block position="5,8,0"/>
+<block position="6,8,0"/>
+
