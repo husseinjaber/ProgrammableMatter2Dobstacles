@@ -1,0 +1,91 @@
+# Application binary files
+## Exclude all files from applicationsBin sub-directories
+applicationsBin/*/*
+## Except sub-directories of those
+!applicationsBin/*/*/
+## And files with extension
+!applicationsBin/*/*.*
+## Hence, all extension-less files from these directories are ignored => No binaries
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.o-*
+#*.obj // graphic files can have this extension.
+simulatorCore/obj/
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+simulatorCore/lib/
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Temporary files
+simulatorCode/deps/
+*.depends
+*.Td
+*~
+.\#*
+*.swp
+*.log
+*.bak
+*.old
+.DS_Store
+
+# External tools config files
+.projectile
+*.xcodeproj
+*.xcworkspace
+*.cbp
+*.layout
+utilities/LMParser/LMParser
+utilities/meld-compiler/dists/quicklisp/archives/
+utilities/meld-compiler/dists/quicklisp/software/
+
+# Doxyfile documentation output
+doc/xml/
+doc/html/
+
+# Configuration files (must be added manually)
+applicationsBin/*/*.xml
+
+# Screenshot and video exports
+applicationsBin/*/*.ppm
+applicationsBin/*/*.png
+applicationsBin/*/*.jpg
+applicationsBin/*/*.png
+applicationsBin/*/*.jpeg
+applicationsBin/*/*.mkv
+applicationsBin/*/*.mp4
+applicationsBin/*/*.mpeg
+applicationsBin/*/*.dat
+applicationsBin/*/*.pdf
+applicationsBin/*/animation_*/
+applicationsBin/*/Screenshots/
+
+# User-generated files
+applicationsBin/*/*.m
+TAGS
+
+# CMake files
+applicationsSrc/*/cmake-build-debug/
+applicationsSrc/*/.idea/

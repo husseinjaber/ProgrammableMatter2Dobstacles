@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no" ?>
+<visuals windowSize="1800,900"/>
+<world gridSize="60,60,1" >
+<camera target="2500,1250,1" directionSpherical="0,90,5500" angle="30" near="1000" far="10000" />
+<spotlight target="1800,900,21" directionSpherical="60,50,6100" angle="33" />
+
+
+<blockList color="128,128,128">
+
+    
+    //obstacle vertical inside 
+    <block position="8,4,0" color="247,96,232" obstacle="true"/>
+    <block position="8,5,0" color="247,96,232" obstacle="true"/>
+
+
+</blockList>
+
+<targetList>
+    <target format="grid">
+       
+
+    </target>
+</targetList>
+</world>

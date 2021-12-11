@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no" ?>
+<visuals windowSize="1800,1000" backgroundColor="#00000F" backgroundGradientColor="#00AAAA"/>
+<world gridSize="10,10,10" windowSize="1800,1000">
+    <camera target="200,200,102.5" directionSpherical="-706.09,46.4552,902.528" angle="35" near="75" far="1504" />
+    <spotlight target="200,200,102.5" directionSpherical="60,30,902.528" angle="33" />
+    <blockList blockSize="40,40,41">
+        <block position="1,1,0" color="50,50,50" />
+        <block position="2,1,0" color="50,50,50" />
+        <block position="3,1,0" color="50,50,50" />
+        <block position="4,1,0" color="50,50,50" />
+        <block position="5,1,0" color="50,50,50" />
+        <block position="2,2,0" color="50,50,50" />
+        <block position="5,2,0" color="50,50,50" />
+        <block position="2,3,0" color="50,50,50" />
+        <block position="3,3,0" color="50,50,50" />
+        <block position="4,3,0" color="50,50,50" />
+        <block position="5,3,0" color="50,50,50" />
+        <block position="2,3,1" color="50,50,50" />
+        <block position="5,3,1" color="50,50,50" />
+        <block position="2,3,2" color="50,50,50" />
+        <block position="5,3,2" color="50,50,50" />
+        <block position="2,3,3" color="50,50,50" />
+        <block position="3,3,3" color="50,50,50" />
+        <block position="4,3,3" color="50,50,50" />
+        <block position="5,3,3" isA="true" color="255,0,0" />
+        <block position="2,4,3" color="50,50,50" />
+        <block position="2,4,4" color="50,50,50" />
+        <block position="2,5,4" color="50,50,50" />
+        <block position="2,5,5" color="50,50,50" />
+        <block position="2,6,5" color="50,50,50" />
+        <block position="3,6,5" color="50,50,50" />
+        <block position="4,6,5" color="50,50,50" />
+        <block position="5,6,5" color="50,50,50" />
+        <block position="6,6,5" color="50,50,50" />
+        <block position="7,6,5" color="50,50,50" />
+        <block position="7,7,5" color="50,50,50" />
+        <block position="7,8,5" color="50,50,50" />
+        <block position="6,3,0" color="50,50,50" />
+        <block position="7,3,0" color="50,50,50" />
+        <block position="7,3,1" color="50,50,50" />
+        <block position="7,3,2" color="50,50,50" />
+        <block position="7,3,3" color="50,50,50" />
+        <block position="7,3,4" color="50,50,50" />
+        <block position="7,3,5" color="50,50,50" />
+        <block position="7,3,6" color="50,50,50" />
+    </blockList>
+</world>

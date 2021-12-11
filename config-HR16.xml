@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no" ?>
+
+<world gridSize="31,13,2" windowSize="1920,1080">
+    <camera target="300,300,10" directionSpherical="0,60,600" angle="45" near="100" far="10000"/>
+    <blockList color="0,255,0" blockSize="100.0,100.0,60.0">
+        <!-- Colors
+        Worker: color="0,112,192"
+        EQU: color="255,51,0"
+        OP: color="252,228,214"
+        Storage: color="0,255,0"
+        Buffer: color="0,239,255"
+        -->
+        <!-- Worker id="w1" -->
+        <block position="2,6,0" color="0,112,192"/>
+        <!-- Worker id="w2" -->
+        <block position="11,6,0" color="0,112,192"/>
+        <!-- Worker id="w3" -->
+        <block position="17,6,0" color="0,112,192"/>
+        <!-- Worker id="w4" -->
+        <block position="25,6,0" color="0,112,192"/>
+        <!-- EQ1 VCell 1 S:(13,8)-E:(21,12)-->
+        <block position="21,12,0" color="255,51,0" lx="9" ly="5" leader="1"/>
+        <!-- OP10 -->
+        <block position="19,9,1" color="252,228,214"/><!-- id="op10" -->
+        <block position="21,8,1"/><!-- id="se1" -->
+        <block position="17,7,0" color="0,239,255"/><!-- id="b1" -->
+        <!-- OP20 -->
+        <block position="15,9,1" color="252,228,214"/><!-- id="op20" -->
+        <block position="13,8,1"/><!-- id="se2" -->
+        <block position="13,7,0" color="0,239,255"/><!-- Buffer id="b2" S:(12,7)-E:(13,7)-->
+        <!-- EQ2 VCell 2 S:(4,8)-E:(12,12)-180°-->
+        <block position="12,12,0" color="255,51,0"/>
+        <!-- OP30 -->
+        <block position="10,9,1" color="252,228,214"/><!-- id="op30" -->
+        <block position="12,8,1"/><!-- id="se3" -->
+        <block position="8,7,0" color="0,239,255"/><!-- Buffer id="b3" -->
+        <!-- OP40 -->
+        <block position="7,9,1" color="252,228,214"/><!-- id="op40" -->
+        <!-- OP50 -->
+        <block position="5,9,1" color="252,228,214"/><!-- id="op50" -->
+        <block position="4,8,1"/><!-- id="se4" -->
+        <block position="3,7,0" color="0,239,255"/><!-- Buffer id="b4" -->
+        <!-- EQ3 VCell 3 S:(0,0)-E:(8,4)-180°-->
+        <block position="8,4,0" color="255,51,0"/>
+        <!-- OP60 -->
+        <block position="2,3,1" color="252,228,214"/><!-- id="op60" -->
+        <block position="0,4,1"/><!-- id="se5" -->
+        <block position="4,5,0" color="0,239,255"/><!-- id="b5" -->
+        <!-- OP70 -->
+        <block position="6,3,1" color="252,228,214"/><!-- id="op70" -->
+        <block position="8,4,1"/><!-- id="se6" -->
+        <block position="9,5,0" color="0,239,255"/><!-- Buffer id="b6" S:(8,5)-E:(9,5)-180°-->
+        <!-- EQ4 VCell 4 S:(9,0)-E:(17,4)-180°-->
+        <block position="17,4,0" color="255,51,0"/>
+        <!-- OP80 -->
+        <block position="10,3,1" color="252,228,214"/><!-- id="op80" -->
+        <block position="9,4,1"/><!-- id="se7" -->
+        <!-- OP90 -->
+        <block position="12,3,1" color="252,228,214"/><!-- id="op90" -->
+        <block position="13,5,0" color="0,239,255"/><!-- Buffer id="b7" 180° -->
+        <!-- OP100 -->
+        <block position="15,3,1" color="252,228,214"/><!-- id="op100" -->
+        <block position="17,4,1"/><!-- id="se8" -->
+        <block position="18,5,0" color="0,239,255"/><!-- Buffer id="b8" S:(17,5)-E:(18,5)-180°-->
+        <!-- EQ5 Leaktester S:(18,0)-E:(20,4)-180°-->
+        <block position="20,4,0" color="255,51,0"/>
+        <!-- OP110 -->
+        <block position="19,3,1" color="252,228,214"/><!-- id="op110" -->
+        <block position="18,4,1"/><!-- id="se9" -->
+        <block position="21,5,0" color="0,239,255"/><!-- Buffer id="b9" S:(20,5)-E:(21,5)-180°-->
+        <!-- EQ6 Screwing S:(21,0)-E:(23,4)-180°-->
+        <block position="23,4,0" color="255,51,0"/>
+        <!-- OP120 -->
+        <block position="22,3,1" color="252,228,214"/><!-- id="op120" -->
+        <block position="21,4,1"/><!-- id="se10" -->
+        <block position="24,5,0" color="0,239,255"/><!-- Buffer id="b10" S:(23,5)-E:(24,5)-180°-->
+        <!-- EQ7 Final inspection S:(24,0)-E:(26,4)-180°-->
+        <block position="26,4,0" color="255,51,0"/>
+        <!-- OP130 -->
+        <block position="25,3,1" color="252,228,214"/><!-- id="op130" -->
+        <block position="26,5,0" color="0,239,255"/><!-- Buffer id="b11" 180°-->
+        <!-- EQ8 Packaging S:(27,5)-E:(30,7)-90°-->
+        <block position="30,7,0" color="255,51,0"/>
+        <!-- OP140 -->
+        <block position="27,6,1" color="252,228,214"/><!-- id="op140" -->
+    </blockList>
+</world>
