@@ -417,23 +417,29 @@ Maze.prototype.draw = function() {
 					
 		// 		}
 		// 	}
-		// }
+		// }s
 	
-	var request = new XMLHttpRequest();
-    request.open('GET', 'localhost/Text1.txt', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-				alert(request.responseText);
-                return request.responseText;
-            }
-        }
-    }
+	// var request = new XMLHttpRequest();
+    // request.open('GET', 'Text1.txt', true);
+    // request.send(null);
+    // request.onreadystatechange = function () {
+    //     if (request.readyState === 4 && request.status === 200) {
+    //         var type = request.getResponseHeader('Content-Type');
+    //         if (type.indexOf("text") !== 1) {
+	// 			alert(request.responseText);
+    //             return request.responseText;
+    //         }
+    //     }
+    // }
 	
-	canvas.width = ((this.width*3 * 2) + 3) * this.wallSize;;
-	canvas.height = ((this.height*3 * 2) + 3) * this.wallSize;
+	var FirstPart;
+	var SecondPart;
+
+
+
+
+	canvas.width = ((this.width*2 * 2) + 2) * this.wallSize;;
+	canvas.height = ((this.height*2 * 2) + 2) * this.wallSize;
 
 	const ctx = canvas.getContext('2d');
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -473,12 +479,18 @@ Maze.prototype.draw = function() {
 			let pixel = parseInt(this.matrix[i].charAt(j), 10);
 			if (pixel) {
 
-				for(let m = j*3; m < j*3+3;m++){
-					for(let n = i*3; n < i*3+3;n++){
+				for(let m = j*2; m < j*2+2;m++){
+					for(let n = i*2; n < i*2+2;n++){
+						// alert("n:"+n+" m:"+m);
 						// if(m==j*3 && n==i*3){
 							ctx.fillStyle = this.color;
-							ctx.fillRect((m * this.wallSize), ((44-n) * this.wallSize), this.wallSize, this.wallSize);
-							TempString = m + "," + (44-n);
+							ctx.fillRect((m * this.wallSize), ((30-n) * this.wallSize), this.wallSize, this.wallSize);
+							var NewM = m+7;
+							var NewN = n+7;
+							TempString = "<block position=\""+NewM+","+NewN+",0\" color=\"247,96,232\" obstacle=\"true\"/>\"";
+							
+							
+							// m + "," + (44-n);
 							FinalString =FinalString+ TempString + "\n";
 						// }
 						// else{
@@ -494,6 +506,40 @@ Maze.prototype.draw = function() {
 		}
 	}
 	//export
+
+	function download(filename, text) {
+		var element = document.createElement('a');
+		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+		element.setAttribute('download', filename);
+	  
+		element.style.display = 'none';
+		document.body.appendChild(element);
+	  
+		element.click();
+	  
+		document.body.removeChild(element);
+	  }
+
+	fetch("./src/Text1.txt").then(response => response.text()).then(data => {
+		FirstPart = data;
+		// alert(data);
+		fetch("./src/Text2.txt").then(response => response.text()).then(data => {
+			SecondPart=data;
+			// alert(data);
+			var FinalString2 = FirstPart + "\n" + FinalString + "\n" +SecondPart;
+
+			// var dataa = new FormData();
+			// dataa.append("data" , FinalString2);
+			// var xhr = new XMLHttpRequest();
+			// xhr.open( 'post', './src/config.xml', true );
+			// xhr.send(dataa);
+			download("config.xml",FinalString2);
+			// alert(FinalString2);
+
+		});
+	});
+
+
 
 
 }
