@@ -20,6 +20,7 @@ ShapeReconfigurationBlockCode::ShapeReconfigurationBlockCode(HexanodesBlock *hos
 
     module = static_cast<HexanodesBlock*>(hostBlock);
     
+    
 }
 
 void ShapeReconfigurationBlockCode::startup() {
