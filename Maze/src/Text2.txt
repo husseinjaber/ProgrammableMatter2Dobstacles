@@ -5,26 +5,26 @@
 <targetList>
     <target format="grid">
 	    <cell position="37,32,0"/>
-	    <cell position="38,32,0"/>
-	    <cell position="39,32,0"/>
 	    <cell position="37,31,0"/>
-	    <cell position="38,31,0"/>
-	    <cell position="39,31,0"/>
 	    <cell position="37,30,0"/>
-	    <cell position="38,30,0"/>
-	    <cell position="39,30,0"/>
 	    <cell position="37,29,0"/>
-	    <cell position="38,29,0"/>
-	    <cell position="39,29,0"/>
 	    <cell position="37,28,0"/>
-	    <cell position="38,28,0"/>
-	    <cell position="39,28,0"/>
 	    <cell position="37,27,0"/>
-	    <cell position="38,27,0"/>
-	    <cell position="39,27,0"/>
 	    <cell position="37,26,0"/>
-	    <cell position="38,26,0"/>
-	    <cell position="39,26,0"/>
+	    <cell position="37,25,0"/>
+	    <cell position="37,24,0"/>
+	    <cell position="37,23,0"/>
+	    <cell position="37,22,0"/>
+	    <cell position="37,21,0"/>
+	    <cell position="37,20,0"/>
+	    <cell position="37,19,0"/>
+	    <cell position="37,18,0"/>
+	    <cell position="37,17,0"/>
+	    <cell position="37,16,0"/>
+	    <cell position="37,15,0"/>
+	    <cell position="37,14,0"/>
+	    <cell position="37,13,0"/>
+	    <cell position="37,12,0"/>
     </target>
 </targetList>
 </world>
