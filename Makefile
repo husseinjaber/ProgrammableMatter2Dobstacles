@@ -1,6 +1,7 @@
 #######################
 #
 # --- Tune this area to your needs ---
+
 #
 # You have to set GLOBAL_LIBS and GLOBAL_CFLAGS
 # Those variables will then be sent to all the sub-makefiles
