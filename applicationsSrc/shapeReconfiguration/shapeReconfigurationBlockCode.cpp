@@ -92,6 +92,8 @@ bool ShapeReconfigurationBlockCode::CheckIfStuckOnClockwise(){
         if(target && containsPosition(Hexanodes::getWorld()->obstacles, destination))
             return true;
     }
+    else
+        return true;
     return false;
 }
 
